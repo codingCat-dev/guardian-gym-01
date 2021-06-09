@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,400i|Nunito:300,300i"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" type="image/png" href="img/favicon.png" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+      integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+      crossorigin=""
+    />
+    <script
+      defer
+      src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+      integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+      crossorigin=""
+    ></script>
+    <script defer src="script.js"></script>
+    <title>Guardian Gym</title>
+  </head>
+  <body>
+    <!--START-->
+    <!--navigation ------------------------------------- -->
+
+    <div class="navigation">
+      <div class="navigation__logo-box">
+        <img
+          src="img/logowhite.png"
+          alt="website logo bicep curl inside shields"
+          class="navigation__logo"
+        />
+      </div>
+      <div class="navigation__adress">
+        <span class="navigation__adress--name"
+          >2250 Squat Street,Bicep curl</span
+        >
+        <span class="navigation__adress--tel">+222/222-222</span>
+      </div>
+      <div class="navigation__title-box">
+        <span class="navigation__title--main">Guardian</span>
+        <span class="navigation__title--sub">Gym</span>
+      </div>
+      <div class="navigation__icon-box">
+        <div class="navigation__icon--open">
+          <i class="fas fa-grip-lines fa-3x"></i>
+        </div>
+        <div class="navigation__icon--close hiddenIcon">
+          <i class="fas fa-times fa-3x"></i>
+        </div>
+      </div>
+      <div class="navigation__nav hidden">
+        <img src="img/logonavmain.png" alt="" class="navigation__nav--image" />
+        <ul class="navigation__item">
+          <li>
+            <a href="#header" class="navigation__link">Home</a>
+          </li>
+          <li>
+            <a href="#classes" class="navigation__link">Classes</a>
+          </li>
+          <li>
+            <a href="#trainers" class="navigation__link">Trainers</a>
+          </li>
+
+          <li>
+            <a href="#gallery" class="navigation__link">Gallery</a>
+          </li>
+          <li>
+            <a href="#membership" class="navigation__link">Membership</a>
+          </li>
+          <li>
+            <a href="#contact" class="navigation__link">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!--HEADER-------------------------------------  -->
+    <header class="header" id="header">
+      <div>
+        <img src="img/gymtitle.jpg" alt="" class="header__image" />
+      </div>
+      <div class="header__title">
+        <span class="header__title--1">Train</span>
+        <span class="header__title--2">Eat</span>
+        <span class="header__title--3">Sleep</span>
+        <span class="header__title--4">Repeat</span>
+      </div>
+
+      <div class="form" id="formHeader">
+        <div class="form__container">
+          <span class="form__icon" id="formCloseButton">
+            <i class="fas fa-times fa-2x"></i>
+          </span>
+          <form action="#">
+            <h3 class="form__title">
+              <span class="form__discount"></span>
+
+              On first subscription
+            </h3>
+            <div class="form__items">
+              <input class="form__input" type="text" id="name" required />
+              <label class="form__label" for="name">name</label>
+            </div>
+            <div class="form__items">
+              <input class="form__input" type="email" id="email" required />
+              <label class="form__label" for="email">Email Adress</label>
+            </div>
+            <div class="form__button-box">
+              <button class="form__items__button">Join Now</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </header>
+    <!-- CLASSES SECTION ------------------------------------- -->
+    <section class="classes" id="classes">
+      <div>
+        <h3 class="heading-primary">Classes</h3>
+      </div>
+      <div class="classes__cards">
+        <!--CARD ONE------------------------------------- -->
+        <div class="card">
+          <img src="img/gymtrainer1.jpg" alt="" class="card__image" />
+          <div class="card__title">
+            <h3>
+              Personal <br />
+              Training
+            </h3>
+          </div>
+          <div class="card__divider"></div>
+          <div class="card__text">
+            <p>
+              With personal training, the focus is you. We design a program
+              specific to your health and fitness goal and work with you to
+              achieve them.
+            </p>
+          </div>
+          <div>
+            <button class="card__button">Join</button>
+          </div>
+        </div>
+        <!--CARD ------------------------------------- -->
+        <div class="card">
+          <img src="img/cardiocrush.jpg" alt="" class="card__image" />
+          <div class="card__title">
+            <h3>
+              Cardio <br />
+              Crush
+            </h3>
+          </div>
+          <div class="card__divider"></div>
+          <div class="card__text">
+            <p>
+              complete fat burning and weight loss training. This cardio workout
+              will get your heart rate pumping.
+            </p>
+          </div>
+          <div>
+            <button class="card__button">Join</button>
+          </div>
+        </div>
+        <!--CARD THREE------------------------------------- -->
+        <div class="card">
+          <img src="img/gymjoga.jpg" alt="" class="card__image" />
+          <div class="card__title">
+            <h3>
+              Yoga <br />
+              Classes
+            </h3>
+          </div>
+          <div class="card__divider"></div>
+          <div class="card__text">
+            <p>
+              you will find Guardian's gym joga training methods
+              transformational, inclusive, and life changing.
+            </p>
+          </div>
+          <div>
+            <button class="card__button">Join</button>
+          </div>
+        </div>
+        <!--CARD FOUR------------------------------------- -->
+        <div class="card">
+          <img src="img/strengthcore.jpg" alt="" class="card__image" />
+          <div class="card__title">
+            <h3>
+              Strength <br />
+              & Core
+            </h3>
+          </div>
+          <div class="card__divider"></div>
+          <div class="card__text">
+            <p>
+              Core exercises train the muscles in your pelvis, lower back, hips
+              and abdomen to work in harmony. This leads to better balance and
+              stability.
+            </p>
+          </div>
+          <div>
+            <button class="card__button">Join</button>
+          </div>
+        </div>
+        <!--END CARDS-->
+      </div>
+    </section>
+    <!--TRAINERS--------------------------------------- -->
+    <section class="trainers" id="trainers">
+      <div class="trainers__title">
+        <h3 class="heading-primary">Best Coaches around</h3>
+        <p>
+          With their fitness expertise, our trainers are uniquely qualified for
+          educating clients to develop more healthy lifestyles.
+        </p>
+        <button class="trainers__button">Check Our Coaches</button>
+      </div>
+      <div class="trainers__container">
+        <!-- Trainer 1-------------->
+        <div class="trainer trainerHiddenInfo">
+          <img src="img/trainer1.jpg" alt="" class="trainer__image" />
+          <ul class="trainer__item">
+            <li class="trainer__list">John Biceps</li>
+            <li class="trainer__list">27</li>
+            <li class="trainer__list"></li>
+          </ul>
+          <div class="trainer__info">
+            <p>
+              Certified Strength and Conditioning Specialist. He has a
+              background in health and fitness as well as athletic performance
+              training with over 5 years of certification and experience in the
+              field. Specific focus given to cardiovascular and strength
+              training in combination with balance and flexibility training.
+            </p>
+            <a href="#" class="trainer__contact">Hire John</a>
+          </div>
+        </div>
+        <!-- Trainer 2-------------->
+        <div class="trainer trainerHiddenInfo">
+          <img src="img/trainer2.jpg" alt="" class="trainer__image" />
+          <ul class="trainer__item">
+            <li class="trainer__list">Leila Squat</li>
+            <li class="trainer__list">23</li>
+          </ul>
+          <div class="trainer__info">
+            <p>
+              Leila believes that along with exercise, holistic wellness
+              strategies are the best way to achieve and maintain a healthy
+              body, mind, and soul. She specializes in weight loss,
+              strength/conditioning, and correcting biomechanical deficiencies
+              so clients can vivaciously live their best lives.
+            </p>
+            <a href="#" class="trainer__contact">Hire Leila</a>
+          </div>
+        </div>
+        <!-- Trainer 3-------------->
+        <div class="trainer trainerHiddenInfo">
+          <img src="img/trainer3.jpg" alt="" class="trainer__image" />
+          <ul class="trainer__item">
+            <li class="trainer__list">Mike Protein</li>
+            <li class="trainer__list">29</li>
+          </ul>
+          <div class="trainer__info">
+            <p>
+              Mike approaches fitness as a life long behavior modification where
+              we have continuous improvement. He defines his sessions as simple,
+              challenging, and efficient with an emphasis on proper form and
+              mobility. His favorite client is anyone with a goal and a
+              willingness to work towards it!
+            </p>
+            <a href="#" class="trainer__contact">Hire Mike</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Trainers End-------------->
+    <!-- GALLERY-------------->
+    <div class="gallery__title">
+      <h3 class="heading-primary">Gallery</h3>
+      <p>
+        Beside Regular workout area, Guardian gym also offers relaxation area
+        with pool, sauna and cozy restaurant.
+      </p>
+    </div>
+    <section class="gallery" id="gallery">
+      <div>
+        <img src="img/image1.jpg" alt="Gallery image 1" class="gallery__img" />
+        <span>Cardio Zone</span>
+      </div>
+
+      <div>
+        <img src="img/image3.jpg" alt="Gallery image 3" class="gallery__img" />
+        <span>Main gym area</span>
+      </div>
+      <div>
+        <img src="img/image4.jpg" alt="Gallery image 4" class="gallery__img" />
+        <span>Free Weight Zone</span>
+      </div>
+      <div>
+        <img src="img/image8.jpg" alt="Gallery image 5" class="gallery__img" />
+        <span>Cardio Crush</span>
+      </div>
+
+      <div>
+        <img src="img/image5.jpg" alt="Gallery image 6" class="gallery__img" />
+        <span>Pool Area</span>
+      </div>
+      <div>
+        <img src="img/image6.jpg" alt="Gallery image 7" class="gallery__img" />
+        <span>Sauna</span>
+      </div>
+      <div>
+        <img src="img/image7.jpg" alt="Gallery image 8" class="gallery__img" />
+        <span>Restaurant</span>
+      </div>
+    </section>
+    <!-- GALLERY---END----------->
+    <!-- MEMBERSHIP-------------->
+    <section class="membership" id="membership">
+      <div class="membership__title">
+        <h3 class="heading-primary">Our Membership</h3>
+        <span class="heading-primary--sub">Choose Your Plan</span>
+        <!-- -------------->
+      </div>
+      <div class="ticket__container">
+        <!-- -------------->
+
+        <div class="ticket">
+          <div class="ticket__title">
+            <div>
+              <i class="ticket__title--icon far fa-lightbulb fa-lg"></i>
+            </div>
+            <span class="heading-primary">Basic</span>
+          </div>
+          <div>
+            <ul class="ticket__item">
+              <li class="ticket__list">8/20 Entrance</li>
+              <li class="ticket__list">Free Parking</li>
+              <li class="ticket__list">Trainer/1xMonth</li>
+              <li class="ticket__list">Towel Service</li>
+              <li class="ticket__list">Protein shake</li>
+            </ul>
+          </div>
+          <span class="heading-primary--sub">99 €/Month</span>
+          <div>
+            <button class="ticket__button">Buy</button>
+          </div>
+        </div>
+        <!-- -------------->
+        <div class="ticket">
+          <div class="ticket__title">
+            <div>
+              <i class="ticket__title--icon far fa-heart fa-lg"></i>
+            </div>
+            <span class="heading-primary">Balanced</span>
+          </div>
+          <div>
+            <ul class="ticket__item">
+              <li class="ticket__list">6/22 Entrance</li>
+              <li class="ticket__list">Free Parking</li>
+              <li class="ticket__list">Trainer/1x Week</li>
+              <li class="ticket__list">Towel Service</li>
+              <li class="ticket__list">Protein Shake</li>
+            </ul>
+          </div>
+          <span class="heading-primary--sub">199 €/Month</span>
+          <div>
+            <button class="ticket__button">Buy</button>
+          </div>
+        </div>
+        <!-- -------------->
+        <div class="ticket">
+          <div class="ticket__title">
+            <div>
+              <i class="ticket__title--icon fas fa-crown fa-lg"></i>
+            </div>
+            <span class="heading-primary">Premium</span>
+          </div>
+          <div>
+            <ul class="ticket__item">
+              <li class="ticket__list">0/24 Entrance</li>
+              <li class="ticket__list">vallet Parking</li>
+              <li class="ticket__list">Trainer/1x Day</li>
+              <li class="ticket__list">Silk Tower Service</li>
+              <li class="ticket__list">Protein shake</li>
+            </ul>
+          </div>
+          <span class="heading-primary--sub">499 €/Month</span>
+
+          <div>
+            <button class="ticket__button">Buy</button>
+          </div>
+        </div>
+        <!-- -------------->
+      </div>
+    </section>
+
+    <!-- -------------->
+    <h3 class="heading-primary">Contact</h3>
+    <footer class="footer" id="contact">
+      <div id="map"></div>
+      <div class="footer__contact">
+        <ul class="footer__contact--item">
+          <li class="footer__contact--list">
+            <span class="footer__contact--infobig"
+              ><i class="far fa-compass"></i> Adress</span
+            >
+            <span class="footer__contact--infosmall"
+              >2250 SQUAT STREET,BICEP CURL</span
+            >
+          </li>
+          <li class="footer__contact--list">
+            <span class="footer__contact--infobig"
+              ><i class="fas fa-phone"></i> Tel</span
+            >
+            <span class="footer__contact--infosmall">222/222-222</span>
+          </li>
+          <li class="footer__contact--list">
+            <span class="footer__contact--infosmall">
+              <a href="#" class="footer__contact--link"
+                ><i class="fab fa-facebook-messenger fa-lg"></i
+              ></a>
+            </span>
+            <span class="footer__contact--infosmall">
+              <a href="mailto:tocycz@gmail.com" class="footer__contact--link"
+                ><i class="far fa-envelope lg"></i
+              ></a>
+            </span>
+            <span class="footer__contact--infosmall">
+              <a href="#" class="footer__contact--link"
+                ><i class="fas fa-hashtag fa-lg"></i
+              ></a>
+            </span>
+          </li>
+        </ul>
+        <div class="footer__copyright">
+          <span class="footer__copright--text"
+            >Guardian gym project by: <br />
+            coding_cat</span
+          >
+          <img
+            src="img/codingcat.jpeg"
+            alt=""
+            class="footer__copyright--image"
+          />
+        </div>
+      </div>
+
+      <!-- -------------->
+    </footer>
+    <!-- MEMBERSHIPT END-------------->
+    <!-- -------------->
+    <!--END-->
+  </body>
+</html>
